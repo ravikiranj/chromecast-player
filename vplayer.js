@@ -40,7 +40,10 @@ $( document ).ready(function() {
                         });
                this.play();
                if (sUrl) {
+                   // Show subtitle class
                    $('#sAdjust').removeClass('hidden');
+                   // Pin subtitle to bottom
+                   $('.vjs-text-track-display').css('bottom', '1em');
                }
            });
            displayMsg("Video loaded successfully, now you can full screen it and Chromecast it !!!", 'info');
@@ -54,6 +57,8 @@ $( document ).ready(function() {
       var currSize = parseInt(track.css('font-size'), 10);
       var newSize = currSize + 5;
       track.css('font-size', newSize);
+      // Pin subtitle to bottom
+      track.css('bottom', '1em');
   });
 
   $('#sDecrease').click(function(event) {
@@ -61,5 +66,7 @@ $( document ).ready(function() {
       var currSize = parseInt(track.css('font-size'), 10);
       var newSize = currSize - 5;
       track.css('font-size', newSize);
+      // Pin subtitle to bottom
+      track.css('bottom', '1em');
   });
 });
