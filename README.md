@@ -1,4 +1,6 @@
-chromecast-player
-=================
+Chromecast Video Player
+-----------------------
+   - Download the repo and put it in your webserver directory
+   - Launch the webpage, select your local video (including subtitles) and play it
+   - Chromecast it and enjoy !
 
-HTML5 video player with subtitles for easy Chromecasting

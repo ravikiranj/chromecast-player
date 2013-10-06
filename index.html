@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+        <link href="vplayer.css" rel="stylesheet">
+        <h2 class="title">Chromecast Video Player</h2>
+        <form id="vidForm">
+            <div class="inp"><span>Select video file</span><input id="vInput" type="file" accept="video/*"/> </div>
+            <div class="inp"><span>Select subtitle file</span><input id="sInput" type="file" accept="application/x-subrip"/> </div>
+            <div class="inp"><input type="submit" value="Play Video"/></div>
+        </form>
+        <div id="message"></div>
+        <div id="vidPlayerContainer">
+            <video id="vidPlayer" 
+                   class="video-js vjs-default-skin"
+                    controls preload="auto" width="640" height="360"
+                    poster="ready-to-cast.png">
+            </video>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://vjs.zencdn.net/c/video.js"></script>
+        <script src="vplayer.js"></script>
+    </body>
+</html>

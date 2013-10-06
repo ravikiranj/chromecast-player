@@ -1,0 +1,33 @@
+.title {
+    margin-left: 10px;
+}
+#vidForm {
+    margin-bottom: 5px;
+}
+#vidPlayerContainer {
+    margin-left: 10px;
+}
+.inp {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 650px;
+    overflow: hidden;
+    display: block;
+}
+.inp span {
+    width: 150px;
+    display: inline-block;
+    border: 1px solid #E8E8E8;
+    margin-right: 10px;
+    padding: 2px;
+}
+#message {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+#message .error {
+    color: red;
+}
+#message .info {
+    color: green;
+}
