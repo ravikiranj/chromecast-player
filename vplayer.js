@@ -39,11 +39,27 @@ $( document ).ready(function() {
                           'src' : vUrl
                         });
                this.play();
+               if (sUrl) {
+                   $('#sAdjust').removeClass('hidden');
+               }
            });
            displayMsg("Video loaded successfully, now you can full screen it and Chromecast it !!!", 'info');
        } catch(ex) {
            console.log(ex);
        }
+  });
 
+  $('#sIncrease').click(function(event) {
+      var track = $('.vjs-text-track-display');
+      var currSize = parseInt(track.css('font-size'), 10);
+      var newSize = currSize + 5;
+      track.css('font-size', newSize);
+  });
+
+  $('#sDecrease').click(function(event) {
+      var track = $('.vjs-text-track-display');
+      var currSize = parseInt(track.css('font-size'), 10);
+      var newSize = currSize - 5;
+      track.css('font-size', newSize);
   });
 });

@@ -1,6 +1,10 @@
 .title {
     margin-left: 10px;
 }
+.adjust {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 #vidForm {
     margin-bottom: 5px;
 }
@@ -30,4 +34,11 @@
 }
 #message .info {
     color: green;
+}
+.hidden {
+    display: none;
+}
+/* Subtitle HACK */
+.vjs-text-track-display {
+    font-size: 3em;
 }
