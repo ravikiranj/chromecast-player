@@ -3,12 +3,13 @@ $( document ).ready(function() {
   var displayMsg = function (msg, className){
       $('#message')[0].innerHTML = '<p class="'+className+'">' + msg + '</p>';;
   };
+  // Check if blob urls are supported
   if (!URL) {
     var notSupportedMsg = 'Your browser is not <a href="http://caniuse.com/bloburls">supported</a>!';
     displayMsg(notSupportedMsg, 'error');
     return;
   }
-
+  // Load Video (with subtitles) 
   $('#vidForm').submit(function(event) {
       event.preventDefault();
       var vInput = $('#vInput')[0];
@@ -52,6 +53,7 @@ $( document ).ready(function() {
        }
   });
 
+  // increase subtitles font size
   $('#sIncrease').click(function(event) {
       var track = $('.vjs-text-track-display');
       var currSize = parseInt(track.css('font-size'), 10);
@@ -61,6 +63,7 @@ $( document ).ready(function() {
       track.css('bottom', '1em');
   });
 
+  // decrease subtitles font size
   $('#sDecrease').click(function(event) {
       var track = $('.vjs-text-track-display');
       var currSize = parseInt(track.css('font-size'), 10);
